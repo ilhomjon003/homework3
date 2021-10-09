@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .container{
+    width: 80%;
+    height: auto;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 599px){
+    .product{
+        background-color: blueviolet;
+        border-radius: 50%;
+    }
+
+    .product:hover{
+        background-color: blue;
+        transition: 0.453s;
+    }
+} */
+
+/* .box{
+    width: 80%;
+    height: 600px;
+    background-image: url('https://www.apple.com/v/home/ae/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_largetall_2x.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 800px){
+    .box{
+        background-image: url('https://www.apple.com/v/home/ae/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_mediumtall_2x.jpg');
+    }
+} */
+
+.wrapper{
+    width: 80%;
+    height: 500px;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.product{
+    background-color: green;
+}
+
+@media only screen and (max-width: 1400px) {
+    .wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
